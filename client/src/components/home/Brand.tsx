@@ -1,6 +1,7 @@
+import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "../../components/ui/button";
+import { Card, CardContent } from "../../components/ui/card";
 import { CheckCircle } from "lucide-react";
 
 const brands = [
@@ -69,7 +70,7 @@ const Brands = () => {
                   <ul className="space-y-4 mb-8 flex-grow">
                     {brand.features.map((feature, i) => (
                      <li key={i} className="flex items-center gap-3 text-sm">
-                     <CheckCircle className="h-4 w-4 text-primary" /> {/* Icône élégante */}
+                     <CheckCircle className="h-4 w-4 text-primary" /> 
                      {feature}
                    </li>
                     ))}

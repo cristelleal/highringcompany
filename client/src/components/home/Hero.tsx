@@ -1,7 +1,8 @@
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import React from "react";
-import heroImage from "../../../public/img/hero-logo.png";
+import { motion } from "framer-motion";
+import { Button } from "../../components/ui/button";
+import heroImage from "../../img/hero-logo.png";
+import { Link } from "wouter";
 
 const Hero = () => {
   return (
@@ -25,12 +26,11 @@ const Hero = () => {
               convaincre, innover, unir.
             </p>
             <div className="flex items-center gap-4">
-              <Button size="lg" className="hover-scale">
-                Contactez-nous
-              </Button>
-              <p className="text-sm text-muted-foreground">
-                Réponse en moins d'une heure
-              </p>
+              <Link href="https://app.highring.fr/" target="_blank" rel="noreferrer" >
+                <Button size="lg" className="hover-scale">
+                  Accéder à la plateforme
+                </Button>
+              </Link>
             </div>
           </motion.div>
 

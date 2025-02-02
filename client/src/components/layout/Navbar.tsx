@@ -1,10 +1,11 @@
+import React from "react";
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 import { ThemeToggle } from "../theme-toggle";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "../../components/ui/sheet";
 
 const Navbar = () => {
   const [location] = useLocation();
@@ -164,7 +165,15 @@ c14 -13 56 -34 94 -46 57 -20 88 -24 188 -24 115 0 123 1 186 32 71 35 105 74
               </Link>
             ))}
             <ThemeToggle />
-            <Button variant="default">Contactez-nous</Button>
+            <Link
+              href="https://app.highring.fr/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button size="lg" className="hover-scale">
+                Se connecter
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Navigation */}
@@ -193,9 +202,15 @@ c14 -13 56 -34 94 -46 57 -20 88 -24 188 -24 115 0 123 1 186 32 71 35 105 74
                       </motion.a>
                     </Link>
                   ))}
-                  <Button className="mt-4" variant="default">
-                    Contactez-nous
-                  </Button>
+                  <Link
+                    href="https://app.highring.fr/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Button size="lg" className="hover-scale">
+                      Accéder à la plateforme
+                    </Button>
+                  </Link>
                 </div>
               </SheetContent>
             </Sheet>
