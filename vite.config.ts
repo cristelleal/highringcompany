@@ -20,4 +20,7 @@ export default defineConfig({
     outDir: path.resolve(__dirname, 'client', 'dist'),
     emptyOutDir: true,
   },
+  define: {
+    "process.env": {},
+  },
 });

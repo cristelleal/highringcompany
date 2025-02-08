@@ -90,6 +90,20 @@
 
 @layer utilities {
   .text-shadow-light {
-    text-shadow: 0.5px 0.5px 0 #fff, -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff;
+    text-shadow: 0.5px 0.5px 0 #fff, -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff,
+      -0.5px 0.5px 0 #fff;
   }
+}
+
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }

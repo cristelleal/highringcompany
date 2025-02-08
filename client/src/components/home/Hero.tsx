@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "../../components/ui/button";
 import heroImage from "../../img/hero-logo.png";
-import { Link } from "wouter";
 
 const Hero = () => {
   return (
@@ -16,21 +15,27 @@ const Hero = () => {
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Une union professionnelle
-              <span className="gradient-text"> sur-mesure</span>
+              <span className="gradient-text dark:text-primary"> sur-mesure</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Passez au futur du recrutement : faites comme nos talents et partenaires, 
-              testez avec succès la méthodologie HighRing.
-              <br /><br />
-              Nous donnons notre maximum dans la logique de notre triptyque : 
+              Passez au futur du recrutement : faites comme nos talents et
+              partenaires, testez avec succès la méthodologie HighRing.
+              <br />
+              <br />
+              Nous donnons notre maximum dans la logique de notre triptyque :
               convaincre, innover, unir.
             </p>
             <div className="flex items-center gap-4">
-              <Link href="https://app.highring.fr/" target="_blank" rel="noreferrer" >
+              <a
+                href="https://app.highring.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Accéder à la plateforme"
+              >
                 <Button size="lg" className="hover-scale">
                   Accéder à la plateforme
                 </Button>
-              </Link>
+              </a>
             </div>
           </motion.div>
 

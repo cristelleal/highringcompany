@@ -1,6 +1,7 @@
+import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "../components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
 import { Check } from "lucide-react";
 
 const Candidates = () => {
@@ -9,9 +10,9 @@ const Candidates = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="pt-32"
+      className="pt-32 font-montserrat"
     >
-      <section className="py-12">
+      <section className="py-16 min-h-[calc(100vh-18rem)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -21,21 +22,16 @@ const Candidates = () => {
             >
               <h1 className="text-4xl font-bold mb-6">
                 Développez votre carrière avec
-                <span className="gradient-text"> HighRing</span>
+                <span className="gradient-text dark:text-primary"> HighRing</span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8">
-                Nous vous accompagnons dans votre évolution professionnelle en vous
-                proposant des opportunités adaptées à vos aspirations.
+                Nous vous accompagnons dans votre évolution professionnelle en vous proposant des opportunités adaptées à vos aspirations.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-4 sm:flex sm:space-x-4 sm:space-y-0">
                 <Button size="lg" className="w-full sm:w-auto">
                   Voir les offres d'emploi
                 </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="w-full sm:w-auto mt-4"
-                >
+                <Button variant="outline" size="lg" className="w-full sm:w-auto">
                   Proposer ma candidature
                 </Button>
               </div>
@@ -47,7 +43,7 @@ const Candidates = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <Card className="glass-card">
-                <CardContent className="p-6">
+                <CardContent className="p-6 space-y-6">
                   <h3 className="text-xl font-bold mb-6">
                     Nos engagements candidats
                   </h3>

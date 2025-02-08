@@ -165,15 +165,16 @@ c14 -13 56 -34 94 -46 57 -20 88 -24 188 -24 115 0 123 1 186 32 71 35 105 74
               </Link>
             ))}
             <ThemeToggle />
-            <Link
+            <a
               href="https://app.highring.fr/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              aria-label="Accéder à la plateforme"
             >
               <Button size="lg" className="hover-scale">
                 Se connecter
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Navigation */}
@@ -202,15 +203,16 @@ c14 -13 56 -34 94 -46 57 -20 88 -24 188 -24 115 0 123 1 186 32 71 35 105 74
                       </motion.a>
                     </Link>
                   ))}
-                  <Link
+                  <a
                     href="https://app.highring.fr/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
+                    aria-label="Accéder à la plateforme"
                   >
                     <Button size="lg" className="hover-scale">
                       Accéder à la plateforme
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </SheetContent>
             </Sheet>
