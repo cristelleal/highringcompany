@@ -53,7 +53,7 @@ const Company = () => {
               <h1 className="text-4xl font-bold mb-6">
                 Vous recrutez ?&nbsp;
                 <span className="gradient-text dark:text-primary">
-                  Optimisez votre recrutement
+                  Optimisez votre processus de recrutement
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8">
@@ -73,7 +73,7 @@ const Company = () => {
               <img
                 src={compagnyImg}
                 alt="Team travaillant sur l'ordinateur"
-                className="w-full rounded-3xl shadow-lg"
+                className="w-full rounded-3xl"
               />
             </motion.div>
           </div>
