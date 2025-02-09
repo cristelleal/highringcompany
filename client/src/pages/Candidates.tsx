@@ -12,7 +12,7 @@ const Candidates = () => {
       exit={{ opacity: 0 }}
       className="pt-32 font-montserrat"
     >
-      <section className="py-16 min-h-[calc(100vh-18rem)]">
+      <section className="pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -22,18 +22,40 @@ const Candidates = () => {
             >
               <h1 className="text-4xl font-bold mb-6">
                 Développez votre carrière avec
-                <span className="gradient-text dark:text-primary"> HighRing</span>
+                <span className="gradient-text dark:text-primary">
+                  &nbsp;
+                  HighRing
+                </span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8">
-                Nous vous accompagnons dans votre évolution professionnelle en vous proposant des opportunités adaptées à vos aspirations.
+                Nous vous accompagnons dans votre évolution professionnelle en
+                vous proposant des opportunités adaptées à vos aspirations.
               </p>
               <div className="space-y-4 sm:flex sm:space-x-4 sm:space-y-0">
-                <Button size="lg" className="w-full sm:w-auto">
-                  Voir les offres d'emploi
-                </Button>
-                <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                  Proposer ma candidature
-                </Button>
+                <a
+                  href="https://app.highring.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Accéder à la plateforme"
+                >
+                  <Button size="lg" className="w-full sm:w-auto">
+                    Voir les offres d'emploi
+                  </Button>
+                </a>
+                <a
+                  href="https://app.highring.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Accéder à la plateforme"
+                >
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="w-full sm:w-auto"
+                  >
+                    Proposer ma candidature
+                  </Button>
+                </a>
               </div>
             </motion.div>
 

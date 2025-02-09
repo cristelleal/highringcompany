@@ -15,8 +15,18 @@ import {
   Factory,
   BookOpen,
 } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/tabs";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "../components/ui/card";
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+} from "../components/ui/tabs";
 import brandsImg from "../img/HighRing-recrutement-metier-consulting.webp";
 import brandsImg2 from "../img/HighRing-recrutement-construction-emploi.webp";
 import brandsImg3 from "../img/HighRing-recrutement-emploi-Bordeaux-Paris-glass.webp";
@@ -43,17 +53,35 @@ const Brands = () => {
       ],
       roles: [
         { name: "Génie Climatique (CVC)", icon: <Factory size={20} /> },
-        { name: "Génie Électrique (CFO, Cfa, BT, HT)", icon: <Cable size={20} /> },
-        { name: "Génie Civil (Gros Œuvre, Travaux Publics)", icon: <Building size={20} /> },
-        { name: "BIM (Building Information Modeling)", icon: <Network size={20} /> },
-        { name: "Structures métalliques, bois, mixtes", icon: <HardDrive size={20} /> },
+        {
+          name: "Génie Électrique (CFO, Cfa, BT, HT)",
+          icon: <Cable size={20} />,
+        },
+        {
+          name: "Génie Civil (Gros Œuvre, Travaux Publics)",
+          icon: <Building size={20} />,
+        },
+        {
+          name: "BIM (Building Information Modeling)",
+          icon: <Network size={20} />,
+        },
+        {
+          name: "Structures métalliques, bois, mixtes",
+          icon: <HardDrive size={20} />,
+        },
         { name: "Génie Hydraulique", icon: <Droplet size={20} /> },
         { name: "VRD (Voiries Réseaux Divers)", icon: <Map size={20} /> },
-        { name: "Géotechnique / Fondations spéciales", icon: <Map size={20} /> },
+        {
+          name: "Géotechnique / Fondations spéciales",
+          icon: <Map size={20} />,
+        },
         { name: "Sites et sols pollués", icon: <Factory size={20} /> },
         { name: "Déconstruction / désamiantage", icon: <Wrench size={20} /> },
         { name: "Ingénieur Études", icon: <BookOpen size={20} /> },
-        { name: "Directeur de Bureau d'Études", icon: <GraduationCap size={20} /> },
+        {
+          name: "Directeur de Bureau d'Études",
+          icon: <GraduationCap size={20} />,
+        },
         { name: "Ingénieur Travaux", icon: <HardDrive size={20} /> },
         { name: "Directeur Travaux", icon: <Users2 size={20} /> },
         { name: "Chef de Projet", icon: <Users2 size={20} /> },
@@ -77,11 +105,20 @@ const Brands = () => {
         { name: "Sales", icon: <Briefcase size={20} /> },
       ],
       roles: [
-        { name: "Ingénieur Travaux expérimenté", icon: <HardDrive size={20} /> },
+        {
+          name: "Ingénieur Travaux expérimenté",
+          icon: <HardDrive size={20} />,
+        },
         { name: "Ingénieur Études expérimenté", icon: <BookOpen size={20} /> },
-        { name: "Économiste de la Construction", icon: <Building2 size={20} /> },
+        {
+          name: "Économiste de la Construction",
+          icon: <Building2 size={20} />,
+        },
         { name: "Responsable d'Activité", icon: <Briefcase size={20} /> },
-        { name: "Expert en Développement Commercial", icon: <Users2 size={20} /> },
+        {
+          name: "Expert en Développement Commercial",
+          icon: <Users2 size={20} />,
+        },
         { name: "Expert en Stratégie RH", icon: <Users2 size={20} /> },
       ],
       image: brandsImg,
@@ -91,7 +128,10 @@ const Brands = () => {
       description:
         "Les ingénieurs d'affaires accompagnent les entreprises dans leur développement commercial et stratégique, en identifiant de nouvelles opportunités de croissance.",
       sectors: [
-        { name: "Entreprises de services du numérique (ESN, ex-SSII)", icon: <Network size={20} /> },
+        {
+          name: "Entreprises de services du numérique (ESN, ex-SSII)",
+          icon: <Network size={20} />,
+        },
         { name: "Grandes industries", icon: <Factory size={20} /> },
       ],
       roles: [
@@ -119,13 +159,13 @@ const Brands = () => {
     >
       <div className="container mx-auto px-4">
         <Tabs defaultValue={brandsData[0].name} className="w-full">
-          <TabsList className="flex justify-center mb-12 space-x-4">
+          <TabsList className="flex flex-wrap justify-center mb-12 space-x-4">
             {brandsData.map((brand) => (
-              <TabsTrigger
-                key={brand.name}
-                value={brand.name}
-              >
-                {brand.name}
+              <TabsTrigger key={brand.name} value={brand.name}>
+                <span className="block md:hidden">
+                  {brand.name.replace("HighRing ", "")}
+                </span>
+                <span className="hidden md:block">{brand.name}</span>
               </TabsTrigger>
             ))}
           </TabsList>
@@ -138,34 +178,42 @@ const Brands = () => {
                 exit={{ opacity: 0 }}
                 className="space-y-8"
               >
-                <div className="text-center max-w-3xl mx-auto space-y-6">
-                  <h1 className="text-4xl font-bold tracking-tight">{brand.name}</h1>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {brand.description}
-                  </p>
-                  {brand.intro && (
-                    <p className="text-muted-foreground leading-relaxed">{brand.intro}</p>
-                  )}
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="flex-1 max-w-3xl">
+                    <div className="text-center md:text-left space-y-6">
+                      <h1 className="text-4xl font-bold tracking-tight">
+                        {brand.name}
+                      </h1>
+                      <p className="text-muted-foreground leading-relaxed">
+                        {brand.description}
+                      </p>
+                      {brand.intro && (
+                        <p className="text-muted-foreground leading-relaxed">
+                          {brand.intro}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      className="w-full"
+                    >
+                      <img
+                        src={brand.image}
+                        alt={brand.name}
+                        className="rounded-2xl duration-300 w-full h-auto object-cover"
+                      />
+                    </motion.div>
+                  </div>
                 </div>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="w-full md:w-1/2 mx-auto"
-                >
-                  <img
-                    src={brand.image}
-                    alt={brand.name}
-                    className="rounded-2xl duration-300"
-                  />
-                </motion.div>
-
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <Card className="dark:border-0">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
-                        <Building2 className="h-6 w-6" />
                         Secteurs d'activité
                       </CardTitle>
                     </CardHeader>
@@ -194,7 +242,6 @@ const Brands = () => {
                   <Card className="dark:border-0">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
-                        <Users2 className="h-6 w-6" />
                         Métiers
                       </CardTitle>
                     </CardHeader>
