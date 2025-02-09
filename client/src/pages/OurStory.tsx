@@ -71,7 +71,7 @@ const OurStory = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="p-6 text-center space-y-4 bg-primary/5 dark:bg-primary/10 rounded-lg dark:bg-background dark:border border-border"
+              className="p-6 text-center space-y-4 bg-primary/5 rounded-lg dark:bg-background dark:border border-border"
             >
               <Medal size={40} className="mx-auto text-primary" />
               <h3 className="text-xl font-bold">Convaincre</h3>
@@ -84,7 +84,7 @@ const OurStory = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="p-6 text-center space-y-4 bg-primary/5 dark:bg-primary/10 rounded-lg dark:bg-background dark:border border-border"
+              className="p-6 text-center space-y-4 bg-primary/5 rounded-lg dark:bg-background dark:border border-border"
             >
               <Rocket size={40} className="mx-auto text-primary" />
               <h3 className="text-xl font-bold">Innover</h3>
@@ -97,7 +97,7 @@ const OurStory = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="p-6 text-center space-y-4 bg-primary/5 dark:bg-primary/10 rounded-lg dark:bg-background dark:border border-border"
+              className="p-6 text-center space-y-4 bg-primary/5 rounded-lg dark:bg-background dark:border border-border"
             >
               <Handshake size={40} className="mx-auto text-primary" />
               <h3 className="text-xl font-bold">Unir</h3>
