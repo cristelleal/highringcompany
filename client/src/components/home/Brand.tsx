@@ -36,7 +36,7 @@ const brands = [
 
 const Brands = () => {
   return (
-    <section className="py-20 bg-primary/5">
+    <section className="py-20 bg-primary/5 dark:bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,7 @@ const Brands = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card className="glass-card h-full hover-scale">
-                <CardContent className="p-6 flex flex-col h-full">
+                <CardContent className="p-6 flex flex-col h-full bg-card rounded-lg">
                   <h3 className="text-xl font-bold mb-2">{brand.title}</h3>
                   <p className="text-sm text-muted-foreground mb-6">
                     {brand.subtitle}

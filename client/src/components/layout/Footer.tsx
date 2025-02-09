@@ -5,7 +5,7 @@ import img from "../../img/logo-HighRing-simple.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary/5 py-12">
+    <footer className="bg-primary/5 dark:bg-background py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
@@ -13,7 +13,7 @@ const Footer = () => {
               <img
                 src={img}
                 alt="HighRing Logo"
-                className="h-12 w-auto mb-2 hover-scale bg-primary/10 rounded-xl p-2"
+                className="h-12 w-auto mb-2 hover-scale bg-white/30 rounded-xl p-2"
               />
             </Link>
             <p className="text-sm text-muted-foreground">

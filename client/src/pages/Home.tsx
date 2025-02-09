@@ -18,7 +18,7 @@ const Home = () => {
       <Brands />
       <Testimonials />
       
-      <section className="py-20 bg-primary/5">
+      <section className="py-20 bg-primary/5 dark:bg-background">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
