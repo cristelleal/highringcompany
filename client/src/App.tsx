@@ -16,6 +16,7 @@ import Brands from "./pages/Brands";
 import Legals from "./pages/Legals";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import OurStory from "./pages/OurStory";
+import Contact from "./pages/Contact";
 
 function Router() {
   return (
@@ -30,6 +31,7 @@ function Router() {
         <Route path="/mentions-legales" component={Legals} />
         <Route path="/politique-de-confidentialite" component={PrivacyPolicy} />
         <Route path="/notre-histoire" component={OurStory} />
+        <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
