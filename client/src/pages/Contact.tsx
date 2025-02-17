@@ -47,7 +47,7 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
             className="p-6 border border-border rounded-xl bg-card"
           >
-            <h3 className="text-xl font-semibold text-primary flex items-center gap-2">
+            <h3 className="text-xl font-semibold flex items-center gap-2">
               <MapPin size={20} /> HighRing Paris
             </h3>
             <p className="text-muted-foreground mt-2">1-7 Cours Valmy, 92800 Puteaux</p>
@@ -67,7 +67,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="p-6 border border-border rounded-xl bg-card"
           >
-            <h3 className="text-xl font-semibold text-primary flex items-center gap-2">
+            <h3 className="text-xl font-semibold flex items-center gap-2">
               <MapPin size={20} /> HighRing Bordeaux
             </h3>
             <p className="text-muted-foreground mt-2">51 Quai Lawton, 33300 Bordeaux</p>
@@ -83,7 +83,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section id="form" ref={formRef} className="py-16 bg-background">
+      <section id="form" ref={formRef} className="py-16 bg-primary/10 dark:bg-background dark:border-t dark:border-border">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-8 text-primary dark:text-white">
             Formulaire de contact

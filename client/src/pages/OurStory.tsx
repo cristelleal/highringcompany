@@ -9,7 +9,7 @@ const OurStory = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="py-16 md:py-24 bg-background"
+      className="pt-32 py-16 md:py-24 bg-background"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <motion.div
@@ -26,7 +26,7 @@ const OurStory = () => {
               HighRing, c’est l’histoire de <strong>Thomas & Mourad</strong>, deux experts avec plus de 11 ans d’expérience dans le conseil en ingénierie.  
               Une vision commune, des valeurs partagées, et l’envie d’innover.
             </p>
-            <p className="text-sm font-semibold uppercase tracking-wide">
+            <p className="text-sm font-semibold uppercase tracking-wide text-primary">
               Mourad Tayebi & Thomas Langronier
             </p>
           </div>

@@ -101,7 +101,7 @@ const Company = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-3xl font-bold mb-6 text-primary"
+            className="text-3xl font-bold mb-6 text"
           >
             Je souhaite recruter un talent
           </motion.h2>
