@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { CheckCircle } from "lucide-react";
+import { Link } from "wouter";
 
-const brands = [
+const businessSectors = [
   {
     title: "CONSTRUCTION",
     subtitle: "Pour tous les acteurs du domaine (EG, MOE, MOA, CG, BET, etc.)",
@@ -34,7 +35,7 @@ const brands = [
   },
 ];
 
-const Brands = () => {
+const Brand = () => {
   return (
     <section className="py-20 bg-primary/5 dark:bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,7 +54,7 @@ const Brands = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {brands.map((brand, index) => (
+          {businessSectors.map((brand, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -75,9 +76,11 @@ const Brands = () => {
                    </li>
                     ))}
                   </ul>
-                  <Button className="w-full mt-auto" variant="outline">
-                    Choisir cette marque
-                  </Button>
+                  <Link to={`/brands/${brand.title.toLowerCase()}`}>
+                    <Button className="w-full mt-auto" variant="outline">
+                      Choisir cette marque
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </motion.div>
@@ -88,4 +91,4 @@ const Brands = () => {
   );
 };
 
-export default Brands;
+export default Brand;

@@ -5,6 +5,7 @@ import Features from "../components/home/Features";
 import Brands from "../components/home/Brand";
 import Testimonials from "../components/home/Testimonials";
 import { Button } from "../components/ui/button";
+import { Link } from "wouter";
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
       <Features />
       <Brands />
       <Testimonials />
-      
+
       <section className="py-20 bg-primary/5 dark:bg-background">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -29,9 +30,11 @@ const Home = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Vous souhaitez nous rencontrer afin d'échanger avec nos équipes ?
             </p>
-            <Button size="lg" className="hover-scale">
-              Contactez-nous
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="hover-scale">
+                Contactez-nous
+              </Button>
+            </Link>
             <p className="text-sm text-muted-foreground mt-4">
               Réponse (toujours) en moins d'une heure !
             </p>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Building2,
@@ -32,11 +32,13 @@ import brandsImg2 from "../img/HighRing-recrutement-construction-emploi.webp";
 import brandsImg3 from "../img/HighRing-recrutement-emploi-Bordeaux-Paris-glass.webp";
 import testimonialPic from "../img/Thomas-Langronier-portrait-HighRing_50.webp";
 import testimonialPic2 from "../img/mourad-tayebi-portrait_50.webp";
+import { useLocation, useRoute } from "wouter";
 
 const Brands = () => {
   const brandsData = [
     {
       name: "HighRing Construction",
+      slug: "construction",
       description:
         "Maillon indispensable du processus, l'ingénieur construction intervient dans différentes phases de travaux, de conception et réalisation d'un projet. Thomas Langronier, co-fondateur de HighRing, issu d'un cursus Ingénieur en Génie Civil à l'ESITC promo 2016, représente la marque au sein de l'entreprise.",
       intro:
@@ -96,6 +98,7 @@ const Brands = () => {
     },
     {
       name: "HighRing Consulting",
+      slug: "consulting",
       description:
         "Nos partenaires n'ont pas toujours la possibilité ni la volonté de s'engager sur un CDI ou un CDD, mais ont seulement besoin d'une intervention ponctuelle sur leur projet. Nos talents pensent leur carrière différemment et veulent plus d'indépendance en se mettant à leur compte, mais n'ont pas le temps de démarcher une nouvelle clientèle.",
       intro:
@@ -125,6 +128,7 @@ const Brands = () => {
     },
     {
       name: "HighRing Sales",
+      slug: "sales",
       description:
         "Les ingénieurs d'affaires accompagnent les entreprises dans leur développement commercial et stratégique, en identifiant de nouvelles opportunités de croissance.",
       sectors: [
@@ -150,6 +154,19 @@ const Brands = () => {
     },
   ];
 
+  const [match, params] = useRoute("/brands/:brandName");
+  const [location, setLocation] = useLocation();
+  const [activeTab, setActiveTab] = useState("");
+
+  useEffect(() => {
+    if (match && params.brandName) {
+      const foundBrand = brandsData.find((b) => b.slug === params.brandName);
+      if (foundBrand) {
+        setActiveTab(foundBrand.slug);
+      }
+    }
+  }, [match, params]);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -158,10 +175,17 @@ const Brands = () => {
       className="min-h-screen bg-background pt-24 pb-16"
     >
       <div className="container mx-auto px-4">
-        <Tabs defaultValue={brandsData[0].name} className="w-full">
+      <Tabs
+          value={activeTab}
+          onValueChange={(val) => {
+            setActiveTab(val);
+            setLocation(`/brands/${val}`);
+          }}
+          className="w-full"
+        >
           <TabsList className="flex flex-wrap justify-center mb-12 space-x-4">
             {brandsData.map((brand) => (
-              <TabsTrigger key={brand.name} value={brand.name}>
+              <TabsTrigger key={brand.slug} value={brand.slug}>
                 <span className="block md:hidden">
                   {brand.name.replace("HighRing ", "")}
                 </span>
@@ -171,7 +195,7 @@ const Brands = () => {
           </TabsList>
 
           {brandsData.map((brand) => (
-            <TabsContent key={brand.name} value={brand.name}>
+            <TabsContent key={brand.slug} value={brand.slug}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
