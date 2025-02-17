@@ -44,6 +44,7 @@ const Navbar = () => {
                   transform="translate(0.000000,423.000000) scale(0.100000,-0.100000)"
                   fill="currentColor"
                   stroke="currentColor"
+                  className="text-primary dark:text-white"
                 >
                   <path
                     d="M2364 3499 c-20 -6 -34 -17 -38 -31 -8 -30 -8 -1242 0 -1263 6 -14
