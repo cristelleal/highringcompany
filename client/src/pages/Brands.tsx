@@ -205,7 +205,7 @@ const Brands = () => {
                 <div className="flex flex-col md:flex-row items-center gap-8">
                   <div className="flex-1 max-w-3xl">
                     <div className="text-center md:text-left space-y-6">
-                      <h1 className="text-4xl font-bold tracking-tight text-primary">
+                      <h1 className="text-4xl font-bold tracking-tight">
                         {brand.name}
                       </h1>
                       <p className="text-muted-foreground leading-relaxed">

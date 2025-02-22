@@ -65,7 +65,7 @@ const Company = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-3xl font-bold text-primary mb-6"
+            className="text-3xl font-bold mb-6"
           >
             Gagnez du temps avec HighRing
           </motion.h2>
@@ -81,7 +81,7 @@ const Company = () => {
 
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-8 text-primary">
+          <h2 className="text-3xl font-bold mb-8">
             Nos étapes de recrutement
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -127,7 +127,7 @@ const Company = () => {
 
       <section className="py-16 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-primary">
+          <h2 className="text-3xl font-bold mb-4">
             Une question ?
           </h2>
           <p className="text-muted-foreground">

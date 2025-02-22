@@ -42,7 +42,7 @@ const Contact = () => {
     >
       <section className="bg-primary/5 dark:bg-background/90 py-16 md:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary">
+          <h1 className="text-4xl md:text-5xl font-bold">
             Contactez-nous
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -71,7 +71,7 @@ const Contact = () => {
           className="space-y-8"
         >
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold text-primary">Parlons de votre projet</h2>
+            <h2 className="text-3xl font-bold">Parlons de votre projet</h2>
             <p className="text-lg text-muted-foreground">
               Trouver le bon profil cadre n’a jamais été aussi simple.  
               Contactez l'agence HighRing la plus proche pour commencer.
@@ -79,7 +79,7 @@ const Contact = () => {
           </div>
 
           <div className="p-6 border border-border rounded-xl bg-card space-y-4">
-            <h3 className="text-xl font-semibold flex items-center gap-2 text-primary">
+            <h3 className="text-xl font-semibold flex items-center gap-2">
               <MapPin size={20} /> HighRing Paris
             </h3>
             <p className="text-muted-foreground">1-7 Cours Valmy, 92800 Puteaux</p>
@@ -94,7 +94,7 @@ const Contact = () => {
           </div>
 
           <div className="p-6 border border-border rounded-xl bg-card space-y-4">
-            <h3 className="text-xl font-semibold flex items-center gap-2 text-primary">
+            <h3 className="text-xl font-semibold flex items-center gap-2">
               <MapPin size={20} /> HighRing Bordeaux
             </h3>
             <p className="text-muted-foreground">51 Quai Lawton, 33300 Bordeaux</p>
@@ -115,7 +115,7 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="bg-background dark:bg-background rounded-xl p-6 shadow-md border border-border"
         >
-          <h2 className="text-2xl font-bold text-primary mb-4">
+          <h2 className="text-2xl font-bold mb-4">
             Formulaire de contact
           </h2>
           <p className="text-sm text-muted-foreground mb-6">

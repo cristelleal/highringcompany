@@ -49,7 +49,7 @@ const Hero = () => {
             <img
               src={heroImage}
               alt="HighRing Recrutement"
-              className="relative rounded-3xl hover-scale p-4 dark:bg-background"
+              className="relative rounded-3xl hover-scale p-4 dark:border dark:border-border dark:bg-card"
             />
           </motion.div>
         </div>
