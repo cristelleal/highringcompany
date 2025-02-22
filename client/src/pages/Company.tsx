@@ -91,20 +91,20 @@ const Company = () => {
                 description:
                   "Complétez votre demande et échangez avec un expert recrutement en moins de 24h.",
                 icon: (
-                  <MessageSquare size={40} className="text-primary mx-auto" />
+                  <MessageSquare size={40} className="text-yellow-500/50 mx-auto" />
                 ),
               },
               {
                 title: "Définition du besoin",
                 description:
                   "Nous affinons ensemble le profil idéal et lançons la recherche des meilleurs talents.",
-                icon: <FileText size={40} className="text-primary mx-auto" />,
+                icon: <FileText size={40} className="text-yellow-500/50 mx-auto" />,
               },
               {
                 title: "Recrutement efficace",
                 description:
                   "Nous vous accompagnons tout au long du processus : entretiens, sélection et finalisation.",
-                icon: <Target size={40} className="text-primary mx-auto" />,
+                icon: <Target size={40} className="text-yellow-500/50 mx-auto" />,
               },
             ].map((step, index) => (
               <motion.div

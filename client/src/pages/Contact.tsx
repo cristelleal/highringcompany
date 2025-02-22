@@ -38,7 +38,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="pt-24 md:pt-32"
+      className="pt-32"
     >
       <section className="bg-primary/5 dark:bg-background/90 py-16 md:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">

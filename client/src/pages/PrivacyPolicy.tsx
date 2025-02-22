@@ -4,7 +4,7 @@ const PrivacyPolicy = () => {
   return (
     <section className="py-20">
       <div className="min-h-screen flex items-center justify-center py-16">
-        <div className="max-w-3xl w-full p-10 rounded-lg bg-primary/5 dark:bg-primary/5">
+        <div className="max-w-3xl w-full p-10 rounded-lg bg-primary/5 dark:bg-background">
           <div className="layout-container p-8 rounded-lg">
             <h2 className="text-primary text-4xl font-bold mb-4">
               Politique de confidentialité

@@ -1,5 +1,5 @@
-import React from "react";
-import { Switch, Route } from "wouter";
+import React, { useEffect } from "react";
+import { Switch, Route, useLocation } from "wouter";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "../src/lib/QueryClient";
 import { Toaster } from "../src/components/ui/toaster";
@@ -19,6 +19,12 @@ import OurStory from "./pages/OurStory";
 import Contact from "./pages/Contact";
 
 function Router() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <AnimatePresence mode="wait">
       <Navbar />
@@ -27,7 +33,7 @@ function Router() {
         <Route path="/candidats" component={Candidates} />
         <Route path="/entreprises" component={Company} />
         <Route path="/brands/:brandName" component={Brands} />
-        <Route path='/faq' component={Faq} />
+        <Route path="/faq" component={Faq} />
         <Route path="/mentions-legales" component={Legals} />
         <Route path="/politique-de-confidentialite" component={PrivacyPolicy} />
         <Route path="/notre-histoire" component={OurStory} />
