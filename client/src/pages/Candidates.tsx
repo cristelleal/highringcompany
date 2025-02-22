@@ -23,15 +23,14 @@ const Candidates = () => {
               <h1 className="text-4xl font-bold mb-6">
                 Développez votre carrière avec
                 <span className="gradient-text dark:text-primary">
-                  &nbsp;
-                  HighRing
+                  &nbsp; HighRing
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8">
                 Nous vous accompagnons dans votre évolution professionnelle en
                 vous proposant des opportunités adaptées à vos aspirations.
               </p>
-              <div className="space-y-4 sm:flex sm:space-x-4 sm:space-y-0">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="https://app.highring.fr/"
                   target="_blank"
