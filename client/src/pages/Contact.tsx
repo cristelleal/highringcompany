@@ -82,7 +82,7 @@ const Contact = () => {
             <h3 className="text-xl font-semibold flex items-center gap-2">
               <MapPin size={20} /> HighRing Paris
             </h3>
-            <p className="text-muted-foreground">1-7 Cours Valmy, 92800 Puteaux</p>
+            <p className="text-muted-foreground">333 Av. Georges Clemenceau, 92000 Nanterre</p>
             <div className="flex flex-col space-y-2 mt-2">
               <a href="tel:+33646375008" className="text-primary flex items-center gap-2">
                 <Phone size={16} /> +33 6 46 37 50 08
@@ -97,7 +97,7 @@ const Contact = () => {
             <h3 className="text-xl font-semibold flex items-center gap-2">
               <MapPin size={20} /> HighRing Bordeaux
             </h3>
-            <p className="text-muted-foreground">51 Quai Lawton, 33300 Bordeaux</p>
+            <p className="text-muted-foreground">17 rue Professeur Demons, 33000 Bordeaux</p>
             <div className="flex flex-col space-y-2 mt-2">
               <a href="tel:+33687631997" className="text-primary flex items-center gap-2">
                 <Phone size={16} /> +33 6 87 63 19 97
