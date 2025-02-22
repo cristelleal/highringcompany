@@ -157,8 +157,8 @@ c14 -13 56 -34 94 -46 57 -20 88 -24 188 -24 115 0 123 1 186 32 71 35 105 74
                   className={`text-sm font-medium transition-colors hover:text-primary
                     ${
                       location === link.href
-                        ? "text-primary"
-                        : "text-foreground/80"
+                        ? "text-primary border-gray-200 border-b-2 border-primary pb-2 dark:border-none"
+                        : "text-foreground"
                     }`}
                 >
                   {link.label}
