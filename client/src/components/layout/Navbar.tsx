@@ -29,7 +29,6 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <Link href="/">
             <motion.div
-              whileHover={{ scale: 1.05 }}
               className="flex-shrink-0 cursor-pointer"
             >
               <svg
@@ -44,7 +43,7 @@ const Navbar = () => {
                   transform="translate(0.000000,423.000000) scale(0.100000,-0.100000)"
                   fill="currentColor"
                   stroke="currentColor"
-                  className="text-primary dark:text-white"
+                  className="dark:text-white"
                 >
                   <path
                     d="M2364 3499 c-20 -6 -34 -17 -38 -31 -8 -30 -8 -1242 0 -1263 6 -14
@@ -153,12 +152,11 @@ c14 -13 56 -34 94 -46 57 -20 88 -24 188 -24 115 0 123 1 186 32 71 35 105 74
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
                 <motion.a
-                  whileHover={{ scale: 1.05 }}
                   className={`text-sm font-medium hover:text-primary
                     ${
                       location === link.href
-                        ? "text-primary"
-                        : "text-foreground"
+                        ? "dark:text-primary"
+                        : "text-muted-foreground dark:text-foreground"
                     }`}
                 >
                   {link.label}
