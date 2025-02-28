@@ -39,7 +39,6 @@ function Router() {
         <Route path="/notre-histoire" component={OurStory} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
-        <Route path="/sitemap.xml" />
       </Switch>
       <Footer />
     </AnimatePresence>
